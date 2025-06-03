@@ -40,8 +40,8 @@ export default function Home() {
             <p>
               We are a professional school dedicated to promoting Chinese
               language education and cultural understanding in Sydney. Since our
-              establishment, we have adhered to the philosophy of "Inspiring
-              Minds, Shaping Futures," offering high-quality Chinese language
+              establishment, we have adhered to the philosophy of &quot;Inspiring
+              Minds, Shaping Futures,&quot; offering high-quality Chinese language
               services to students from diverse backgrounds.
             </p>
             <p>

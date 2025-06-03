@@ -3,6 +3,26 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import { marked } from 'marked';
 
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
+// 生成静态参数
+export async function generateStaticParams() {
+  const postsDirectory = path.join(process.cwd(), 'posts');
+  
+  try {
+    const filenames = fs.readdirSync(postsDirectory);
+    return filenames
+      .filter(name => name.endsWith('.md'))
+      .map(name => ({
+        slug: name.replace(/\.md$/, '')
+      }));
+  } catch {
+    return [];
+  }
+}
+
 async function getPost(slug: string) {
   const postsDirectory = path.join(process.cwd(), 'posts');
   const filePath = path.join(postsDirectory, `${slug}.md`);
@@ -10,13 +30,14 @@ async function getPost(slug: string) {
   try {
     const fileContents = fs.readFileSync(filePath, 'utf8');
     return fileContents;
-  } catch (error) {
+  } catch {
     return null;
   }
 }
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const content = await getPost(params.slug);
+export default async function Post({ params }: PageProps) {
+  const { slug } = await params;
+  const content = await getPost(slug);
 
   if (!content) {
     notFound();
