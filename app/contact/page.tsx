@@ -35,7 +35,7 @@ export default function Contact() {
           <div className="space-y-4">
             <div>
               <h3 className="font-medium">地址</h3>
-              <p className="text-gray-600">北京市海淀区中关村大街1号</p>
+              <p className="text-gray-600">Sydney </p>
             </div>
             <div>
               <h3 className="font-medium">电话</h3>
