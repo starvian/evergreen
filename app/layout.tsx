@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/Navbar';
+import ChatWidget from './components/ChatWidget';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           </p>
           <p className="text-sm">育才悉尼中文学校</p>
         </footer>
+        <ChatWidget />
       </body>
     </html>
   );
