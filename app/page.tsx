@@ -1,5 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link'; // 引入 Link 组件
+import ChineseScrollText from './components/ChineseScrollText';
+// 1. 从 next/font/google 导入字体
+import { ZCOOL_XiaoWei } from 'next/font/google';
+
+// 2. 配置并加载字体
+const zcoolXiaoWei = ZCOOL_XiaoWei({
+  weight: '400', // 毛笔字通常只有 '400' 这个字重
+  subsets: ['latin'], // Next.js 要求必须有 subsets
+  display: 'swap', // 字体加载策略
+});
 
 export default function Home() {
   return (
@@ -40,9 +50,10 @@ export default function Home() {
             <p>
               We are a professional school dedicated to promoting Chinese
               language education and cultural understanding in Sydney. Since our
-              establishment, we have adhered to the philosophy of &quot;Inspiring
-              Minds, Shaping Futures,&quot; offering high-quality Chinese language
-              services to students from diverse backgrounds.
+              establishment, we have adhered to the philosophy of
+              &quot;Inspiring Minds, Shaping Futures,&quot; offering
+              high-quality Chinese language services to students from diverse
+              backgrounds.
             </p>
             <p>
               Our experienced teachers and immersive learning environment help
@@ -55,12 +66,21 @@ export default function Home() {
               </a>
             </Link>
           </div>
-          <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-xl">
-            <Image
-              src="/school-building.jpg" // 确保你有这张图片在 public 文件夹
-              alt="Yucai Sydney Chinese School Building"
-              fill
-              className="object-cover"
+          <div className="p-10 bg-gray-100 flex items-center justify-center">
+            <ChineseScrollText
+              text="莽莽天宇，八万里云驰飙作；恢恢地轮，五千年治乱兴亡。邙砀脊脉，逶迤远连昆岗；河洛清波，浩荡奔注海澨。涉彼洪荒，文明肇创；万代千秋蒙庥，厥功在我炎黄。
+
+曩昔混沌未开之时，含哺而无釜甑，结绳不见文字。伐檀有人，莫及舟车；蚕桑未采，何来垂裳。《礼》云：“故人者，其天地之德、阴阳之交、鬼神之会、五行之秀气也。”伟哉炎黄，据天地之大德，值阴阳之交会，通灵鬼神之际，会道五行之秀。礼行赤县，情系苍生。仰畏天，俯畏人，惟宽仁恭俭，出于自然；而忠恕诚悫，始终如一。不蔽奸佞之谗，不用取容之士。天下咸归，百姓安乐。是以列星随旋，日月递照，风雨博施，万物得和以生，得养以成。
+
+嫘祖，黄帝之妃，始创黼织；仓颉，黄帝之臣，以立文字。炎帝之女精卫，衔石而填沧海；炎帝之臣夸父，逐日以迎霞光。乃神乃人，惟载远古；是传是说，宜辅信史。
+
+岁月迁流，穷奇斯生，涿鹿风云突变，域中归于一统，百族聚为中华，自中原而滂沛十方。从兹以还，历三代二千余年而入于秦，再历二千余年而有今。天不欲亡我中华，必不亡中华之文化。中华文化，有源以之开流；神州百族，有秩以之共理。炎黄脊梁遍列九州，姓氏血脉，扬辉全球。龙从云起，先民图腾，乃往昔五千年文明之大标识，亦兹后亿万年之大旌纛。
+
+大道之行，讲信修睦，故国之兴，端赖和谐。宇内各族，世界侨属，齐献瓣香，恭祭先祖。历万万代，共众芳之所在，固信美而永驻。刻石再拜，以颂以祷，斯馨无恙。"
+              className={`w-[520px] h-[600px] ${zcoolXiaoWei.className}`}
+              speed={380}
+              columnsPerScreen={8}
+              charsPerColumn={10}
             />
           </div>
         </div>
