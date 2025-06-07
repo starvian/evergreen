@@ -5,7 +5,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // assetPrefix: './', // <-- 删除或注释掉这一行
+  assetPrefix: process.env.NODE_ENV === 'production' ? './' : '',
 };
 
 module.exports = nextConfig;
