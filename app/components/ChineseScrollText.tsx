@@ -9,7 +9,7 @@ interface ChineseScrollTextProps {
   speed?: number;
   columnsPerScreen?: number;
   charsPerColumn?: number;
-  slideDuration?: number; // 新增：滑动动画的时长（秒）
+  slideDuration?: number;
 }
 
 const COLUMN_WIDTH = 40;
@@ -21,7 +21,7 @@ const ChineseScrollText: React.FC<ChineseScrollTextProps> = ({
   speed = 10,
   columnsPerScreen = 8,
   charsPerColumn = 12,
-  slideDuration = 5, // 新增：默认值设为 0.5 秒
+  slideDuration = 5,
 }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [iteration, setIteration] = useState(0);
@@ -69,15 +69,15 @@ const ChineseScrollText: React.FC<ChineseScrollTextProps> = ({
   const offsetX = hiddenColumns * (COLUMN_WIDTH + COLUMN_GAP);
 
   return (
-    <div
-      className={`relative rounded-lg overflow-hidden bg-gradient-to-br from-amber-50 to-yellow-100 border-2 border-amber-200 ${className}`}
-    >
-      <div className="absolute inset-0 bg-[url('/bamboo-texture.png')] opacity-20"></div>
+    // 修改处：移除了所有背景和边框相关的类
+    <div className={`relative rounded-lg overflow-hidden ${className}`}>
+      {/* 修改处：提高了纹理的可见度 */}
+      <div className="absolute inset-0 bg-[url('/bamboo-texture.png')] opacity-50"></div>
       <div className="relative z-10 p-8 h-full">
         <motion.div
           className="flex flex-row-reverse gap-8"
           animate={{ x: offsetX }}
-          transition={{ ease: 'linear', duration: slideDuration }} // 使用新的属性
+          transition={{ ease: 'linear', duration: slideDuration }}
         >
           {columns.map((column, colIndex) => (
             <div key={colIndex} className="flex flex-col gap-1 shrink-0">
@@ -90,8 +90,7 @@ const ChineseScrollText: React.FC<ChineseScrollTextProps> = ({
                   >
                     {char && (
                       <motion.span
-                        className="text-3xl font-bold text-amber-900"
-                        // style={{ fontFamily: '"Noto Serif SC", serif' }}
+                        className="text-3xl font-bold text-black"
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5 }}
@@ -107,9 +106,9 @@ const ChineseScrollText: React.FC<ChineseScrollTextProps> = ({
         </motion.div>
       </div>
       <div className="absolute bottom-2 left-2 right-2">
-        <div className="w-full bg-amber-200 rounded-full h-1">
+        <div className="w-full bg-transparent h-1">
           <div
-            className="bg-amber-600 h-1 rounded-full"
+            className="bg-black h-1 rounded-full"
             style={{
               width: `${
                 (displayedText.length / (cleanText.length || 1)) * 100
