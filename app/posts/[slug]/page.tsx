@@ -58,21 +58,21 @@ export default async function Post({ params }: PageProps) {
   const renderer = new marked.Renderer();
 
   // 自定义图片渲染
-  renderer.image = function (href, title, text) {
+  renderer.image = function ({ href, title, text }) {
     // 正确提取href - marked库可能传递token对象而不是字符串
     let safeHref = '';
     if (typeof href === 'string') {
       safeHref = href;
-    } else if (href && typeof href === 'object' && href.href) {
-      safeHref = href.href;
+    } else if (href && typeof href === 'object' && 'href' in href) {
+      safeHref = (href as any).href;
     }
     
     // 正确提取text - 同样可能是对象
     let safeText = '';
     if (typeof text === 'string') {
       safeText = text;
-    } else if (href && typeof href === 'object' && href.text) {
-      safeText = href.text;
+    } else if (href && typeof href === 'object' && 'text' in href) {
+      safeText = (href as any).text;
     }
     
     // 处理路径问题：如果路径以/public开头，去掉/public前缀

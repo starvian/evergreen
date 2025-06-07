@@ -1,0 +1,54 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA07A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4682B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F4F4F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 落霞天空 -->
+  <rect width="400" height="200" fill="url(#skyGradient)"/>
+  
+  <!-- 江水 -->
+  <rect x="0" y="200" width="400" height="100" fill="url(#waterGradient)"/>
+  
+  <!-- 滕王阁主体建筑 -->
+  <!-- 底层 -->
+  <rect x="150" y="120" width="100" height="80" fill="#8B4513"/>
+  <!-- 二层 -->
+  <rect x="160" y="100" width="80" height="20" fill="#A0522D"/>
+  <!-- 三层 -->
+  <rect x="170" y="80" width="60" height="20" fill="#8B4513"/>
+  <!-- 顶层 -->
+  <rect x="180" y="60" width="40" height="20" fill="#A0522D"/>
+  
+  <!-- 屋檐 -->
+  <polygon points="140,120 150,110 250,110 260,120" fill="#654321"/>
+  <polygon points="150,100 160,90 240,90 250,100" fill="#654321"/>
+  <polygon points="160,80 170,70 230,70 240,80" fill="#654321"/>
+  <polygon points="170,60 180,50 220,50 230,60" fill="#654321"/>
+  
+  <!-- 窗户 -->
+  <rect x="170" y="140" width="15" height="20" fill="#FFD700"/>
+  <rect x="215" y="140" width="15" height="20" fill="#FFD700"/>
+  <rect x="185" y="105" width="10" height="10" fill="#FFD700"/>
+  <rect x="205" y="105" width="10" height="10" fill="#FFD700"/>
+  
+  <!-- 远山轮廓 -->
+  <polygon points="0,150 50,130 100,140 150,120 200,130 250,125 300,135 350,125 400,130 400,200 0,200" fill="#2F4F4F" opacity="0.6"/>
+  
+  <!-- 孤鹜（简化的鸟形） -->
+  <ellipse cx="320" cy="100" rx="8" ry="3" fill="#2F4F4F"/>
+  <ellipse cx="315" cy="98" rx="3" ry="1" fill="#2F4F4F"/>
+  
+  <!-- 水中倒影 -->
+  <rect x="150" y="220" width="100" height="60" fill="#8B4513" opacity="0.3"/>
+  
+  <!-- 文字 -->
+  <text x="200" y="290" text-anchor="middle" font-family="serif" font-size="16" fill="white" font-weight="bold">落霞与孤鹜齐飞</text>
+</svg>

@@ -6,8 +6,7 @@ excerpt: '10月1日，在中国南方航空公司的资助下，我们一行26�
 image: '/images/posts/tengwangge-visit/cover.jpg'
 featured: true
 ---
-
-![滕王阁](/images/posts/tengwangge-visit/cover.webp)
+![滕王阁](/images/posts/tengwangge-visit/image-4.webp)
 
 10 月 1 日，在中国南方航空公司的资助下，我们一行 26 人飞赴南昌，开始了我们的寻根之旅江西之行。这是我第二次来到南昌，与我 40 年前来到的南昌，变化实在太大了，处处都是新盖的高楼大厦，城市非常现代化，完全找不到过去记忆中的影子。
 
