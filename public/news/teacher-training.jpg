@@ -1,0 +1,74 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trainingBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E1BEE7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#trainingBg)"/>
+  
+  <!-- Classroom setting -->
+  <rect x="50" y="180" width="300" height="100" fill="#ECEFF1" stroke="#B0BEC5" stroke-width="2" rx="5"/>
+  
+  <!-- Whiteboard -->
+  <rect x="80" y="100" width="120" height="70" fill="white" stroke="#424242" stroke-width="3" rx="3"/>
+  
+  <!-- Content on whiteboard -->
+  <text x="140" y="125" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1976D2" font-weight="bold">教学方法</text>
+  <line x1="90" y1="135" x2="190" y2="135" stroke="#666" stroke-width="1"/>
+  <text x="95" y="150" font-family="Arial, sans-serif" font-size="10" fill="#424242">• 互动式教学</text>
+  <text x="95" y="162" font-family="Arial, sans-serif" font-size="10" fill="#424242">• 情境化学习</text>
+  
+  <!-- Presenter -->
+  <ellipse cx="250" cy="150" rx="15" ry="25" fill="#2196F3"/>
+  <circle cx="250" cy="125" r="8" fill="#F8BBD9"/>
+  <rect x="245" y="115" width="10" height="12" fill="#424242" rx="2"/>
+  
+  <!-- Pointer -->
+  <line x1="235" y1="140" x2="200" y2="130" stroke="#8D6E63" stroke-width="3"/>
+  
+  <!-- Audience (teachers) -->
+  <ellipse cx="120" cy="220" rx="12" ry="18" fill="#4CAF50"/>
+  <circle cx="120" cy="205" r="6" fill="#F8BBD9"/>
+  
+  <ellipse cx="160" cy="225" rx="12" ry="18" fill="#FF9800"/>
+  <circle cx="160" cy="210" r="6" fill="#F8BBD9"/>
+  
+  <ellipse cx="200" cy="220" rx="12" ry="18" fill="#9C27B0"/>
+  <circle cx="200" cy="205" r="6" fill="#F8BBD9"/>
+  
+  <ellipse cx="240" cy="225" rx="12" ry="18" fill="#F44336"/>
+  <circle cx="240" cy="210" r="6" fill="#F8BBD9"/>
+  
+  <ellipse cx="280" cy="220" rx="12" ry="18" fill="#607D8B"/>
+  <circle cx="280" cy="205" r="6" fill="#F8BBD9"/>
+  
+  <!-- Notebooks -->
+  <rect x="110" y="240" width="15" height="20" fill="white" stroke="#E0E0E0" stroke-width="1" rx="1"/>
+  <line x1="115" y1="245" x2="120" y2="245" stroke="#BDBDBD" stroke-width="0.5"/>
+  <line x1="115" y1="250" x2="120" y2="250" stroke="#BDBDBD" stroke-width="0.5"/>
+  
+  <rect x="190" y="240" width="15" height="20" fill="white" stroke="#E0E0E0" stroke-width="1" rx="1"/>
+  <line x1="195" y1="245" x2="200" y2="245" stroke="#BDBDBD" stroke-width="0.5"/>
+  <line x1="195" y1="250" x2="200" y2="250" stroke="#BDBDBD" stroke-width="0.5"/>
+  
+  <!-- Books and materials -->
+  <rect x="300" y="120" width="8" height="40" fill="#1976D2" rx="1"/>
+  <rect x="310" y="125" width="8" height="35" fill="#2196F3" rx="1"/>
+  <rect x="320" y="130" width="8" height="30" fill="#42A5F5" rx="1"/>
+  
+  <!-- Certificate or diploma -->
+  <rect x="280" y="80" width="60" height="40" fill="white" stroke="#9C27B0" stroke-width="2" rx="3"/>
+  <text x="310" y="95" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#9C27B0" font-weight="bold">培训证书</text>
+  <text x="310" y="108" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#666">Training Certificate</text>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#7B1FA2" font-weight="bold">教师培训</text>
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#8E24AA">专业发展 · 教学提升</text>
+  
+  <!-- Light bulb for ideas -->
+  <circle cx="60" cy="60" r="8" fill="#FFC107" stroke="#FF8F00" stroke-width="2"/>
+  <rect x="57" y="68" width="6" height="4" fill="#8D6E63"/>
+  <line x1="52" y1="52" x2="68" y2="68" stroke="#FFC107" stroke-width="1"/>
+  <line x1="68" y1="52" x2="52" y2="68" stroke="#FFC107" stroke-width="1"/>
+</svg>

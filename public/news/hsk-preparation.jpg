@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hskBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#hskBg)"/>
+  
+  <!-- Books stack -->
+  <rect x="80" y="180" width="60" height="8" fill="#1976D2" rx="2"/>
+  <rect x="85" y="172" width="60" height="8" fill="#2196F3" rx="2"/>
+  <rect x="90" y="164" width="60" height="8" fill="#42A5F5" rx="2"/>
+  <rect x="95" y="156" width="60" height="8" fill="#64B5F6" rx="2"/>
+  
+  <!-- HSK Certificate -->
+  <rect x="200" y="120" width="120" height="80" fill="white" stroke="#1976D2" stroke-width="3" rx="5"/>
+  <text x="260" y="140" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#1976D2" font-weight="bold">HSK</text>
+  <text x="260" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#424242">汉语水平考试</text>
+  <text x="260" y="180" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#666">Chinese Proficiency Test</text>
+  
+  <!-- Pencils -->
+  <rect x="50" y="100" width="4" height="60" fill="#FFC107" rx="2"/>
+  <polygon points="50,100 54,100 52,90" fill="#8D6E63"/>
+  <circle cx="52" cy="165" r="3" fill="#E91E63"/>
+  
+  <rect x="60" y="110" width="4" height="60" fill="#4CAF50" rx="2"/>
+  <polygon points="60,110 64,110 62,100" fill="#8D6E63"/>
+  <circle cx="62" cy="175" r="3" fill="#2196F3"/>
+  
+  <!-- Study materials -->
+  <rect x="150" y="200" width="80" height="60" fill="white" stroke="#E0E0E0" stroke-width="2" rx="3"/>
+  <line x1="160" y1="220" x2="220" y2="220" stroke="#BDBDBD" stroke-width="1"/>
+  <line x1="160" y1="230" x2="210" y2="230" stroke="#BDBDBD" stroke-width="1"/>
+  <line x1="160" y1="240" x2="215" y2="240" stroke="#BDBDBD" stroke-width="1"/>
+  <line x1="160" y1="250" x2="205" y2="250" stroke="#BDBDBD" stroke-width="1"/>
+  
+  <!-- Chinese characters practice -->
+  <text x="280" y="230" font-family="serif" font-size="20" fill="#424242">学</text>
+  <text x="310" y="230" font-family="serif" font-size="20" fill="#424242">习</text>
+  <text x="340" y="230" font-family="serif" font-size="20" fill="#424242">中</text>
+  <text x="280" y="255" font-family="serif" font-size="20" fill="#424242">文</text>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#1976D2" font-weight="bold">HSK考试辅导</text>
+  <text x="200" y="65" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">专业指导 · 系统学习</text>
+  
+  <!-- Stars for excellence -->
+  <polygon points="350,80 355,90 365,90 357,97 360,107 350,102 340,107 343,97 335,90 345,90" fill="#FFC107"/>
+  <polygon points="370,100 373,106 380,106 375,110 377,117 370,114 363,117 365,110 360,106 367,106" fill="#FFD54F"/>
+</svg>

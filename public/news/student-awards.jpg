@@ -1,0 +1,62 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="awardsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#awardsBg)"/>
+  
+  <!-- Stage -->
+  <rect x="50" y="200" width="300" height="80" fill="#8D6E63" rx="5"/>
+  <rect x="60" y="190" width="280" height="20" fill="#A1887F" rx="3"/>
+  
+  <!-- Trophy -->
+  <ellipse cx="200" cy="160" rx="15" ry="8" fill="#FFD700"/>
+  <rect x="195" y="160" width="10" height="25" fill="#FFC107"/>
+  <rect x="190" y="185" width="20" height="8" fill="#8D6E63" rx="2"/>
+  
+  <!-- Winner on stage -->
+  <ellipse cx="200" cy="230" rx="18" ry="28" fill="#E53935"/>
+  <circle cx="200" cy="205" r="10" fill="#F8BBD9"/>
+  <rect x="195" y="195" width="10" height="12" fill="#424242" rx="2"/>
+  
+  <!-- Medal -->
+  <circle cx="200" cy="220" r="6" fill="#FFD700" stroke="#FFC107" stroke-width="2"/>
+  <text x="200" y="225" font-family="serif" font-size="8" text-anchor="middle" fill="#D32F2F">优</text>
+  
+  <!-- Other students -->
+  <ellipse cx="150" cy="235" rx="12" ry="20" fill="#2196F3"/>
+  <circle cx="150" cy="220" r="7" fill="#F8BBD9"/>
+  
+  <ellipse cx="250" cy="235" rx="12" ry="20" fill="#4CAF50"/>
+  <circle cx="250" cy="220" r="7" fill="#F8BBD9"/>
+  
+  <!-- Audience applauding -->
+  <circle cx="80" cy="270" r="5" fill="#7F8C8D"/>
+  <ellipse cx="75" cy="265" rx="3" ry="5" fill="#7F8C8D"/>
+  <ellipse cx="85" cy="265" rx="3" ry="5" fill="#7F8C8D"/>
+  
+  <circle cx="320" cy="270" r="5" fill="#95A5A6"/>
+  <ellipse cx="315" cy="265" rx="3" ry="5" fill="#95A5A6"/>
+  <ellipse cx="325" cy="265" rx="3" ry="5" fill="#95A5A6"/>
+  
+  <!-- Certificates -->
+  <rect x="120" y="140" width="20" height="25" fill="white" stroke="#E0E0E0" stroke-width="1" rx="2"/>
+  <rect x="260" y="140" width="20" height="25" fill="white" stroke="#E0E0E0" stroke-width="1" rx="2"/>
+  
+  <!-- Confetti and celebration -->
+  <circle cx="100" cy="50" r="3" fill="#FFC107"/>
+  <circle cx="150" cy="40" r="2" fill="#E91E63"/>
+  <circle cx="250" cy="60" r="3" fill="#2196F3"/>
+  <circle cx="300" cy="45" r="2" fill="#4CAF50"/>
+  <circle cx="320" cy="70" r="3" fill="#FF9800"/>
+  
+  <!-- Stars -->
+  <polygon points="80,80 83,87 91,87 85,92 87,100 80,96 73,100 75,92 69,87 77,87" fill="#FFD700"/>
+  <polygon points="320,90 322,95 328,95 324,98 325,104 320,102 315,104 316,98 312,95 318,95" fill="#FFC107"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#E65100" font-weight="bold">优秀学生表彰</text>
+  <text x="200" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#BF360C">Excellence Recognition</text>
+</svg>
