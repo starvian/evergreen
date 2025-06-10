@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei:wght@400&display=swap');
-
 @theme {
   --color-custom-yellow: #FFC107;
   --color-custom-orange: #FFA000;
@@ -25,15 +23,6 @@
   --color-yellow-500: #eab308;
 }
 
-/* 统一字体定义 */
-.font-default {
-  font-family: Arial, sans-serif;
-}
-
-.font-chinese {
-  font-family: 'ZCOOL XiaoWei', Arial, sans-serif;
-}
-
 body {
-  @apply antialiased text-gray-800 font-default;
+  @apply antialiased text-gray-800;
 }

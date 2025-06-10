@@ -1,6 +1,14 @@
 'use client';
 
 import Image from 'next/image';
+import { ZCOOL_XiaoWei } from 'next/font/google';
+
+// 配置中文字体
+const zcoolXiaoWei = ZCOOL_XiaoWei({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export default function ProgramsPage() {
   const campuses = [
@@ -105,7 +113,7 @@ export default function ProgramsPage() {
           <h1 className="text-4xl md:text-6xl text-white font-bold mb-6 leading-tight">
             Our Programs
           </h1>
-          <h2 className="text-3xl md:text-4xl text-custom-yellow mb-4 font-chinese">
+          <h2 className={`text-3xl md:text-4xl text-custom-yellow mb-4 ${zcoolXiaoWei.className}`}>
             我们的课程
           </h2>
           <p className="text-lg md:text-xl text-gray-200 max-w-3xl">
@@ -135,7 +143,7 @@ export default function ProgramsPage() {
       <div className="max-w-7xl mx-auto px-4 py-16 md:py-24">
         {/* Age Groups Table Section */}
         <section className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-header-dark font-chinese">
+          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-4 text-header-dark ${zcoolXiaoWei.className}`}>
             课程设置
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark">
@@ -221,7 +229,7 @@ export default function ProgramsPage() {
 
         {/* Campus Locations Section */}
         <section className="mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-header-dark font-chinese">
+          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-4 text-header-dark ${zcoolXiaoWei.className}`}>
             分校信息
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark">
@@ -238,7 +246,7 @@ export default function ProgramsPage() {
                     </svg>
                   </div>
                   <h4 className="text-xl font-bold text-header-dark mb-1">{campus.name}</h4>
-                  <p className="text-lg text-custom-orange font-chinese">{campus.nameZh}</p>
+                  <p className={`text-lg text-custom-orange ${zcoolXiaoWei.className}`}>{campus.nameZh}</p>
                   <p className="text-sm text-gray-600 mt-2">{campus.address}</p>
                 </div>
                 
@@ -261,7 +269,7 @@ export default function ProgramsPage() {
 
         {/* Additional Information Section */}
         <section className="bg-gray-50 rounded-lg p-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-header-dark font-chinese">
+          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-8 text-header-dark ${zcoolXiaoWei.className}`}>
             教学特色
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark">
