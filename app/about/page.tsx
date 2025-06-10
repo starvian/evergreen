@@ -1,14 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { ZCOOL_XiaoWei } from 'next/font/google';
-
-// 配置中文字体
-const zcoolXiaoWei = ZCOOL_XiaoWei({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-});
 
 export default function AboutPage() {
   return (
@@ -26,7 +18,7 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-6xl text-white font-bold mb-6 leading-tight">
             About Us
           </h1>
-          <h2 className={`text-3xl md:text-4xl text-custom-yellow mb-4 ${zcoolXiaoWei.className}`}>
+          <h2 className="text-3xl md:text-4xl text-custom-yellow mb-4 font-chinese">
             关于我们
           </h2>
           <p className="text-lg md:text-xl text-gray-200 max-w-3xl">
@@ -39,7 +31,7 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-4 py-16 md:py-24">
         {/* Chinese Section */}
         <section className="mb-20">
-          <h2 className={`text-3xl md:text-4xl font-bold text-center mb-12 text-header-dark ${zcoolXiaoWei.className}`}>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-header-dark font-chinese">
             关于我们
           </h2>
           
@@ -56,7 +48,7 @@ export default function AboutPage() {
 
         {/* Goals Section */}
         <section className="mb-20">
-          <h3 className={`text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark ${zcoolXiaoWei.className}`}>
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark font-chinese">
             我们的目标
           </h3>
           
@@ -101,7 +93,7 @@ export default function AboutPage() {
 
         {/* Teaching Approach Section */}
         <section className="mb-20">
-          <h3 className={`text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark ${zcoolXiaoWei.className}`}>
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-header-dark font-chinese">
             教学特色
           </h3>
           
