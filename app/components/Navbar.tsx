@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const isActive = (path: string) => {
     if (path === '/') {
@@ -122,10 +124,10 @@ export default function Navbar() {
             {/* 移动端菜单按钮 */}
             <div className="md:hidden flex items-center pr-4">
               <button
-                // onClick={() => setMobileMenuOpen(!mobileMenuOpen)} // 控制移动菜单的开关
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="text-header-dark p-2 rounded-md hover:bg-custom-orange/30 focus:outline-none focus:bg-custom-orange/40"
                 aria-label="Open main menu"
-                aria-expanded="false" // 根据 mobileMenuOpen 状态改变
+                aria-expanded={mobileMenuOpen}
               >
                 <svg
                   className="h-6 w-6"
@@ -145,15 +147,15 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* 移动端菜单 (如果实现功能，取消注释并管理状态) */}
-        {/* {mobileMenuOpen && (
+        {/* 移动端菜单 */}
+        {mobileMenuOpen && (
           <div className="md:hidden bg-custom-yellow border-t border-custom-orange/50">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {yucaiNavLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)} // 点击后关闭菜单
+                  onClick={() => setMobileMenuOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium text-header-dark hover:bg-custom-orange/30 ${
                     isActive(link.href) ? 'bg-custom-orange/40' : ''
                   }`}
@@ -163,7 +165,7 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-        )} */}
+        )}
       </nav>
     </header>
   );
