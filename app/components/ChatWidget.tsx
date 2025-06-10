@@ -7,7 +7,7 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: '您好！欢迎来到育才悉尼中文学校！有什么可以帮助您的吗？',
+      text: '您好！欢迎来到悉尼中国育才学校！有什么可以帮助您的吗？',
       sender: 'bot',
       timestamp: new Date(),
     },
@@ -93,7 +93,7 @@ export default function ChatWidget() {
               </div>
               <div>
                 <h3 className="font-semibold text-sm">在线客服</h3>
-                <p className="text-xs opacity-90">育才悉尼中文学校</p>
+                <p className="text-xs opacity-90">悉尼中国育才学校</p>
               </div>
             </div>
             <button

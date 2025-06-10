@@ -33,7 +33,7 @@ export default function RootLayout({
             &copy; {new Date().getFullYear()} Yucai Sydney Chinese School. All
             Rights Reserved.
           </p>
-          <p className="text-sm">育才悉尼中文学校</p>
+          <p className="text-sm">悉尼中国育才学校</p>
         </footer>
         <ChatWidget />
       </body>

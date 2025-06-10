@@ -28,7 +28,7 @@ export default function Navbar() {
       <div className="bg-gray-100 text-gray-700 text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <div>
-            <span>CALL +61 2 XXXX XXXX</span>
+            <span>CALL 0416682288</span>
           </div>
           <div className="flex items-center space-x-3">
             {/* 社交媒体图标链接 */}
@@ -94,7 +94,7 @@ export default function Navbar() {
               {/* <Image src="/logo.png" alt="Yucai Sydney Logo" width={50} height={50} /> */}
               <div className="flex flex-col">
                 <span className="font-bold text-lg md:text-xl leading-tight">
-                  育才悉尼中文学校
+                  悉尼中国育才学校
                 </span>
                 <span className="text-xs md:text-sm font-normal leading-tight">
                   Yucai Sydney Chinese School

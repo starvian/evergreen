@@ -39,11 +39,11 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-medium">电话</h3>
-              <p className="text-gray-600">+86 10 1234 5678</p>
+              <p className="text-gray-600">0416682288</p>
             </div>
             <div>
               <h3 className="font-medium">邮箱</h3>
-              <p className="text-gray-600">contact@chineseschool.com</p>
+              <p className="text-gray-600">sydney.yucai@gmail.com</p>
             </div>
             <div>
               <h3 className="font-medium">工作时间</h3>
