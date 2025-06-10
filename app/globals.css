@@ -34,10 +34,6 @@
   font-family: 'ZCOOL XiaoWei', Arial, sans-serif;
 }
 
-.font-xiaowei {
-  font-family: 'ZCOOL XiaoWei', Arial, sans-serif;
-}
-
 body {
   @apply antialiased text-gray-800 font-default;
 }
