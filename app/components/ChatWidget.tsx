@@ -59,7 +59,7 @@ export default function ChatWidget() {
       console.error('发送消息失败:', error);
       const errorReply = {
         id: messages.length + 2,
-        text: '抱歉，网络连接出现问题，请检查网络后重试。如需紧急帮助，请拨打 +61 2 XXXX XXXX。',
+        text: '抱歉，网络连接出现问题，请检查网络后重试。如需紧急帮助，请拨打 0416682288。',
         sender: 'bot',
         timestamp: new Date(),
       };

@@ -32,11 +32,7 @@ export default function Home() {
             We are dedicated to providing high-quality education for a brighter
             future.
           </p>
-          <Link href="/enrol" legacyBehavior>
-            <a className="bg-custom-orange hover:bg-yellow-500 text-white font-bold py-3 px-8 rounded-md text-lg uppercase transition duration-300">
-              Enrol Now
-            </a>
-          </Link>
+
         </div>
       </div>
 
