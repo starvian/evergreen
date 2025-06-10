@@ -58,8 +58,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="p-10 bg-gray-100 flex items-center justify-center">
-            <ChineseScrollText
-              className="font-chinese text-lg leading-relaxed h-[400px] w-full"
+            <ChineseScrollText 
+              className="font-xiaowei text-lg leading-relaxed h-[400px] w-full"
               text="莽莽天宇八万里云驰飙作恢恢地轮五千年治乱兴亡邙砀脊脉逶迤远连昆岗河洛清波浩荡奔注海澨涉彼洪荒文明肇创万代千秋蒙庥厥功在我炎黄
 
 曩昔混沌未开之时含哺而无釜甑结绳不见文字伐檀有人莫及舟车蚕桑未采何来垂裳礼云故人者其天地之德阴阳之交鬼神之会五行之秀气也伟哉炎黄据天地之大德值阴阳之交会通灵鬼神之际会道五行之秀礼行赤县情系苍生仰畏天俯畏人惟宽仁恭俭出于自然而忠恕诚悫始终如一不蔽奸佞之谗不用取容之士天下咸归百姓安乐是以列星随旋日月递照风雨博施万物得和以生得养以成
